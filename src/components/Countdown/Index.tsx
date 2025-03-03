@@ -22,14 +22,14 @@ const Countdown = ({
             <FaHeart className="text-white text-3xl mx-2.5" />
             <div className="bg-white w-80 max-xs:w-28 max-md:w-48 h-1.5 rounded-lg" />
           </div>
-          <p className="textName">Izzuy &amp; Marcos</p>
+          <p className="textName">Adrian &amp; Claudia</p>
           <div className="flex items-center justify-center p-2.5">
             <div className="bg-white w-80 max-xs:w-28 max-md:w-48 h-1.5 rounded-lg" />
             <FaHeart className="text-white text-3xl mx-2.5" />
             <div className="bg-white w-80 max-xs:w-28 max-md:w-48 h-1.5 rounded-lg" />
           </div>
         </div>
-        <p className="text-4xl text-white">Sabado 24 de Mayo</p>
+        <p className="text-4xl text-white">Sábado 22 de Marzo</p>
         <div className="text-4xl text-center flex w-full items-center justify-center">
           <div className="w-24 mx-1 p-2 text-white rounded-lg">
             <div className="leading-none">
