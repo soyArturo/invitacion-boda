@@ -1,15 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [brideButton, setBrideButton] = useState(false);
-  const [groomButton, setGroomButton] = useState(false);
 
   const sendWhatsapp = (type: string) => {
     const brideNumber = "+526644162283";
     let message = `Hola, soy ${name} y confirmo mi asistencia!`;
     if (type === "bride") {
-      setGroomButton(false);
       message = `Hola Adrian & Claudia, soy ${name} y confirmo mi asistencia!`;
       window.open(`https://wa.me/${brideNumber}?text=${message}`);
     }
