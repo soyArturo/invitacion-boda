@@ -3,13 +3,12 @@ import { useState } from "react";
 
 const Form = () => {
   const [name, setName] = useState("");
-  const [brideButton, setBrideButton] = useState(false);
 
   const sendWhatsapp = (type: string) => {
     const brideNumber = "+526644162283";
     let message = `Hola, soy ${name} y confirmo mi asistencia!`;
     if (type === "bride") {
-      message = `Hola Adrian & Claudia, soy ${name} y confirmo mi asistencia!`;
+      message = `Hola Adrian y Claudia, soy ${name} y confirmo mi asistencia!`;
       window.open(`https://wa.me/${brideNumber}?text=${message}`);
     }
   };
@@ -42,7 +41,7 @@ const Form = () => {
             type="button"
             id="bride-button"
             onClick={() => sendWhatsapp("bride")}
-            disabled={brideButton || !name}
+            disabled={!name}
             className="w-full rounded-md bg-beige px-3 py-2 text-base font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500 disabled:opacity-50"
           >
             Enviar a novios
