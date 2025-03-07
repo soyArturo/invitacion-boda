@@ -46,12 +46,6 @@ const Form = () => {
           >
             Enviar a novios
           </button>
-          <div className="flex justify-center items-center text-sm text-center w-full px-3 mt-2">
-            <p>
-              Aunque nos gustan los niños, esta sera una celebracion solo para
-              adultos
-            </p>
-          </div>
         </div>
       </form>
       <p className="mt-10 text-2xl">Codigo de vestimenta:</p>

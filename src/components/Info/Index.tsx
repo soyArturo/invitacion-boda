@@ -1,6 +1,6 @@
 const Info = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center space-y-5">
+    <div className="h-screen flex flex-col justify-center items-center space-y-10">
       <div className="flex flex-col justify-center items-center w-full">
         <img src="https://img.icons8.com/carbon-copy/75/null/wedding-rings.png" />
         <p className="text-3xl">Ceremonia</p>
@@ -24,11 +24,10 @@ const Info = () => {
         <img src="https://img.icons8.com/carbon-copy/75/null/champagne.png" />
         <p className="text-4xl">Recepcion</p>
         <div className="text-white text-xl bg-guinda px-8 py-2 rounded-lg mt-3">
-          6:00 pm
+          7:00 pm
         </div>
       </div>
       <div className="flex flex-col justify-center items-center px-3">
-        <p className="text-2xl">Jardín de eventos Praderas</p>
         <a
           href="https://maps.app.goo.gl/kJYCyRTMhXDGYT1f7"
           target="_blank"
