@@ -54,7 +54,7 @@ const InvitationScreen = () => {
       <Info />
       <Quote />
       <Form />
-      <div className="containerr space-y-4" />
+      <div className="bg-4 space-y-4" />
     </>
   );
 };

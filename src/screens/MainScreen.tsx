@@ -44,13 +44,15 @@ const MainScreen = () => {
               </div>
             </div>
             <p className="text-2xl text-white text-center px-3">
-              Queridos amigos y familiares, nos vamos a casar y queremos que
-              sean parte de este día tan especial para nosotros.
+              Treinta años atrás comenzamos esta historia de amor, y hoy
+              seguimos escribiéndola con la misma ilusión. Queremos celebrar
+              este gran aniversario con quienes han sido parte de nuestra vida.
+              ¡Nos haría muy felices que nos acompañen!
             </p>
             <div className="buttonContainer flex justify-center">
               <button
                 onClick={() => setInvitationOpen(true)}
-                className="px-8 py-5 bg-black text-white rounded-lg text-xl"
+                className="px-8 py-5 bg-beige text-black rounded-lg text-xl"
               >
                 Abrir invitación
               </button>

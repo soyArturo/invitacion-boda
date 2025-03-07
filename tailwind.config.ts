@@ -9,7 +9,8 @@ export default {
         "body-img": "url('https://picsum.photos/1600/1600/?random')",
       },
       backgroundColor: {
-        guinda: "#800040",
+        guinda: "#66754c",
+        beige: "#f6eddb",
       },
       screens: {
         xs: "480px",

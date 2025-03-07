@@ -6,22 +6,17 @@ const Form = () => {
   const [groomButton, setGroomButton] = useState(false);
 
   const sendWhatsapp = (type: string) => {
-    const brideNumber = "+526646996223";
-    const groomNumber = "+526641710528";
+    const brideNumber = "+526644162283";
     let message = `Hola, soy ${name} y confirmo mi asistencia!`;
     if (type === "bride") {
       setGroomButton(false);
-      message = `Hola Alondra, soy ${name} y confirmo mi asistencia!`;
+      message = `Hola Adrian & Claudia, soy ${name} y confirmo mi asistencia!`;
       window.open(`https://wa.me/${brideNumber}?text=${message}`);
-    } else {
-      setBrideButton(false);
-      message = `Hola Arturo, soy ${name} y confirmo mi asistencia!`;
-      window.open(`https://wa.me/${groomNumber}?text=${message}`);
     }
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full py-10">
+    <div className="h-screen flex flex-col justify-center items-center w-full py-10">
       <p className="text-3xl px-3 text-center">Confirma tu asistencia!🍻</p>
       <form action="" method="post" className="mt-3 w-full px-3">
         <div className="w-full">
@@ -40,7 +35,6 @@ const Form = () => {
               onChange={(e) => setName(e.target.value)}
               value={name}
               className="block w-full rounded-md border border-black p-1.5 text-black shadow-sm"
-              disabled
             />
           </div>
         </div>
@@ -50,19 +44,9 @@ const Form = () => {
             id="bride-button"
             onClick={() => sendWhatsapp("bride")}
             disabled={brideButton || !name}
-            className="w-full rounded-md bg-guinda px-3 py-2 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500 disabled:opacity-50"
+            className="w-full rounded-md bg-beige px-3 py-2 text-base font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500 disabled:opacity-50"
           >
-            Enviar a novia
-          </button>
-
-          <button
-            type="button"
-            id="groom-button"
-            onClick={() => sendWhatsapp("groom")}
-            disabled={groomButton || !name}
-            className="w-full rounded-md bg-black px-3 py-2 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-500n disabled:opacity-50"
-          >
-            Enviar a novio
+            Enviar a novios
           </button>
           <div className="flex justify-center items-center text-sm text-center w-full px-3 mt-2">
             <p>
@@ -89,16 +73,16 @@ const Form = () => {
             <p>Blanco</p>
           </div>
           <div className="flex flex-col space-y-1 justify-center items-center">
-            <div className="w-10 h-10 rounded-full bg-gray-300"></div>
-            <p>Gris</p>
+            <div className="w-10 h-10 rounded-full bg-[#2f4538]"></div>
+            <p>Verde</p>
           </div>
           <div className="flex flex-col space-y-1 justify-center items-center">
-            <div className="w-10 h-10 rounded-full bg-gray-700"></div>
-            <p>Gris oscuro</p>
+            <div className="w-10 h-10 rounded-full bg-beige"></div>
+            <p>Beige</p>
           </div>
           <div className="flex flex-col space-y-1 justify-center items-center">
-            <div className="w-10 h-10 rounded-full bg-pink-950"></div>
-            <p>Guinda</p>
+            <div className="w-10 h-10 rounded-full bg-red-500"></div>
+            <p>Rojo</p>
           </div>
         </div>
       </div>

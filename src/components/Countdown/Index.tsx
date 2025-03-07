@@ -15,7 +15,7 @@ const Countdown = ({
 }: CountdownProps) => {
   return (
     <div>
-      <div className="containerr space-y-4">
+      <div className="bg-2 space-y-4">
         <div className="separatorContainer">
           <div className="flex items-center justify-center p-2.5">
             <div className="bg-white w-80 max-xs:w-28 max-md:w-48 h-1.5 rounded-lg" />
